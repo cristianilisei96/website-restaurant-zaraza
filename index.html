@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Restaurant Zaraza</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="author" content="Ilisei Cristian">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css"></link>
+<link rel="stylesheet" href="css/layout.css"></link>
+<link rel="stylesheet" href="css/skeleton.css"></link>
+<link rel="stylesheet" href="css/font-awesome.css"></link>
+<link rel="stylesheet" href="css/font-awesome.min.css"></link>
+<link rel="stylesheet" href="css/flexslider.css"></link>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/slide/modernizr.js"></script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/slide/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+  
+  <script>
+  	 $(document).ready(function() {
+    $(document).on("scroll", onScroll);
+
+  function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('nav li a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('nav li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+        });
+    }
+})
+  </script> 
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/slide/shCore.js"></script>
+  <script type="text/javascript" src="js/slide/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/slide/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/slide/jquery.easing.js"></script>
+  <script src="js/slide/jquery.mousewheel.js"></script>
+  <script defer src="js/slide/demo.js"></script>
+</head>
+<body>
+	<div id="wrapper" class="container"><!-- START WRAPPER CONTAINER -->
+		<div id="header"><!-- START HEADER -->
+			<div id="logo" class="text-center">
+				<div id="head-logo"></div>
+					<a href="index.html">
+						<img src="images/head/logo.png" />
+					</a>
+				<div id="bottom-logo"></div>
+			</div>	
+		</div><!-- END HEADER -->
+		
+		<div id="nav" class="my-sticky-element"><!-- START NAV -->
+			<div class="container">
+				<nav class="clearfix">
+					<ul class="clearfix">
+						<li><a class="active" href="#header">Acasa</a></li>
+						<li><a href="#about-us">Despre Noi</a></li>
+						<li><a href="#galery">Galerie</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+					<a href="#" id="pull">MENIU</a>
+					<div id="head-logo"></div>
+				</nav>
+			</div>	
+		</div><!-- END NAV -->
+		
+		<div id="home">
+			<div id="main" role="main"><!-- START SLIDE -->
+				<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<img src="images/slide/1.jpg" alt="1" />
+							</li>
+							<li>
+								<img src="images/slide/2.jpg" alt="2" />
+							</li>
+							<li>
+								<img src="images/slide/3.jpg" alt="3" />
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div><!-- END SLIDE -->
+		</div><!-- END HOME -->
+		
+		<div id="about-us" class="section">
+			<div class="container">
+				<div class="title row">	
+					<h1>Despre Noi</h1>
+				</div>	
+
+				<div class="row">
+					<div class="six columns">
+						<img src="images/about-us/build.png">
+					</div>
+					<div class="ten columns">
+					<p>Restaurantul Zaraza a adus partea cea mai aromata din Romania. Mancare sanatoasa, apetisanta, savuroasa, incitanta, cu o prezentare impecabila, pur si simplu "perfecta". 
+					Senzorialul este satisfacut pe toate planurile. </br >
+					Gustul rafinat, jocul desavarsit de arome, formele variate si culorile iti creeaza o stare speciala de spirit ca sa poti simti cu adevarat ce inseamna o mancare buna. <br />
+					Mister, pasiune, traditie de mii de ani, secrete, aveti totul intr-un meniu bogat si intrigant, care se lasa descoperit. </br>
+					Restaurantul Zaraza ofera bogate sortimente culinare, intr-un ambient aparte, specific romanesc.
+					</p>
+					</div>
+				</div>
+						
+			</div><!-- END CONTAINER -->
+		</div><!-- END MENU -->
+		
+		<div id="galery" class="section"><!-- galery START -->
+			<div class="container">
+				<div class="title row">	
+					<h1>Galerie</h1>
+				</div>
+				<div class="row">
+    			<div class="eight columns">
+					<img src="images/gallery/1.jpg">
+				</div>
+				<div class="eight columns">
+					<img src="images/gallery/2.jpg">
+				</div>
+				<div class="eight columns">
+					<img src="images/gallery/3.jpg">
+				</div>
+				<div class="eight columns">
+					<img src="images/gallery/4.jpg">
+				</div>
+			</div>
+			</div>
+		</div><!-- END galery -->
+		
+		<div id="contact" class="section"><!-- START CONTACT -->
+				
+			<div class="title row">		
+				<h1>Contact</h1>
+			</div>
+				
+			<div id="map-restaurant" class="row" style="position: relative;">
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87178.89199915512!2d26.304464837688098!3d46.935348994271344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47355449968fa865%3A0x52d3dedb49e2d0b8!2sPiatra%20Neam%C8%9B!5e0!3m2!1sen!2sro!4v1597148195344!5m2!1sen!2sro" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					
+			</div>
+
+			<div class="form-box row">
+  				<h5>Contacteaza-ne</h5>
+			  	<form action="#" method="post">
+			      	<input id="name" type="text" name="Name" placeholder="Nume">
+	
+			      	<input id="email" type="email" name="Email" placeholder="Email">
+			    
+			      	<textarea id="message" name="Message" placeholder="Mesaj" rows="8"></textarea>
+			    	<div class="col-lg-md text-center">
+					 	<button class="btn btn-submit" type="submit">Send</button>
+					</div>
+			  </form>
+			</div>
+
+		</div><!-- END CONTACT -->
+		
+		<div id="footer"><!-- START FOOTER -->
+			<div id="head-footer"></div>
+				<p>Restaurant Zaraza &copy 2020</p>
+			<div id="bottom-footer"></div>
+		</div><!-- END FOOTER -->
+	</div><!-- END WRAPPER CONTAINER -->
+</body>
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/waypoints-sticky.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.my-sticky-element').waypoint('sticky');
+});
+</script>
+<!-- START SCRIPT DOWN MENU 300px CONTAINER -->
+<script type="text/javascript">
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('nav ul');  
+        menuHeight  = menu.height();  
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+        menu.slideToggle();  
+    });  
+});  
+</script>
+<script type="text/javascript">
+
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+}); 
+</script>
+<!-- END SCRIPT DOWN MENU 300px CONTAINER -->
+<script type="text/javascript" src="js/scripts.js"></script>
+</html>
