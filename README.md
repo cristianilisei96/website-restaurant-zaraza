@@ -1,34 +1,34 @@
-# Restaurant Zaraza — Website de Prezentare
+# Restaurant Zaraza — Presentation Website
 
-Website modern de prezentare pentru un restaurant cu specific tradițional românesc. Construit de la zero, cu accent pe design elegant, performanță și experiență interactivă pentru vizitatori.
+Modern presentation website for a restaurant serving traditional Romanian cuisine. Built from scratch, focused on elegant design, performance, and an interactive experience for visitors.
 
 ## Demo
 
-🔗 [Vezi live](https://cristianilisei96.github.io/website-restaurant-zaraza/)
+🔗 [View live](https://cristianilisei96.github.io/website-restaurant-zaraza/)
 
 ## Screenshot
 
-![Landing page Restaurant Zaraza](screenshots/landing-page.png)
+![Restaurant Zaraza landing page](screenshots/landing-page.png)
 
-## Funcționalități
+## Features
 
-- **Hero cu slider automat** — rotație lină între imagini, cu indicator de progres
-- **Navigare sticky cu scroll-spy** — bara de navigare rămâne fixă și evidențiază automat secțiunea vizibilă
-- **Galerie foto cu lightbox** — click pe orice imagine pentru vizualizare la dimensiune mare
-- **Modal interactiv de rezervare masă** — clientul alege o masă liberă dintr-o hartă vizuală (10 mese, status live de disponibilitate), completează datele și primește confirmare instant
-- **Formular de contact** — pregătit pentru integrare cu un endpoint de email
-- **Hartă Google Maps încorporată** — locație afișată direct pe pagina de contact
-- **Design complet responsive** — optimizat pentru mobil, tabletă și desktop
-- **Animații la scroll** — elemente care apar lin pe măsură ce utilizatorul navighează pagina
+- **Auto-rotating hero slider** — smooth crossfade between images, with progress indicators
+- **Sticky navigation with scroll-spy** — the navbar stays fixed and automatically highlights the visible section
+- **Photo gallery with lightbox** — click any image to view it full-size
+- **Interactive table reservation modal** — the customer picks an available table from a visual floor map (10 tables, live availability status), fills in their details, and gets an instant confirmation
+- **Contact form** — ready to be wired up to an email-sending endpoint
+- **Embedded Google Maps** — location displayed directly on the contact page
+- **Fully responsive design** — optimized for mobile, tablet, and desktop
+- **Scroll animations** — elements fade/slide in smoothly as the visitor scrolls through the page
 
-## Tehnologii folosite
+## Tech stack
 
-- HTML5 semantic
+- Semantic HTML5
 - Tailwind CSS
-- JavaScript (vanilla, fără framework sau librării externe)
+- Vanilla JavaScript (no framework or external libraries)
 - Google Fonts (Playfair Display, Inter, Yesteryear)
 
-## Structură proiect
+## Project structure
 
 ```
 ├── index.html
@@ -40,22 +40,22 @@ Website modern de prezentare pentru un restaurant cu specific tradițional româ
     └── landing-page.png
 ```
 
-## Rulare locală
+## Running locally
 
-Nu necesită build sau instalare de dependențe — e un site static.
+No build step or dependencies required — it's a static site.
 
 ```bash
 git clone https://github.com/cristianilisei96/website-restaurant-zaraza.git
 cd website-restaurant-zaraza
 ```
 
-Deschide `index.html` direct în browser, sau servește folderul cu orice server static (ex. extensia Live Server din VS Code).
+Open `index.html` directly in your browser, or serve the folder with any static server (e.g. the Live Server extension in VS Code).
 
-## Autor
+## Author
 
 **Cristian Ilisei**
 [GitHub](https://github.com/cristianilisei96)
 
-## Licență
+## License
 
-Acest proiect este disponibil ca portofoliu personal. Conținutul (text, imagini) apartine restaurantului prezentat.
+This project is available as a personal portfolio piece. The content (text, images) belongs to the restaurant featured.
